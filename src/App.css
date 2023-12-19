@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.login {
+  width: 27em;
+  height: 40em;
+  min-height: 44em;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  margin-top: 5px;
+  position: relative;
+  z-index: 99;}
+
+   .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#fff;
+    box-shadow: 0px 0px 12px 2px rgba(15, 15, 15, 0.2);
+    border-radius: 1000px;
+    position: relative;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    padding: 17px 10px;
+    transition: transform 200ms ease-in-out;
+    
+  }
+  .right-side {
+    color:#fff;
+    font-weight: 500;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #414b50;  
+    height: 90%;
+    opacity: 0.8;
+    width: 100%;
+    position: absolute;
+    right: -34%;
+    border-radius:1000px;
+    z-index: 1;
+    transition: all 400ms ease-in-out;
+    cursor: pointer;
+    box-shadow: 0px 0px 12px 2px rgba(15, 15, 15, 0.281);
+    text-transform: uppercase;
+
+  
+
+    &.right {
+      right: -15%;
+      letter-spacing: 10px;
+      align-items: flex-end;
+      &:hover {
+        right: -25%;
+      }
+    
+    }
+    &.left {
+      right: 15%;
+      letter-spacing: 10px;
+      align-items: flex-start;
+      &:hover {
+        right: 25%;
+      }
+    }
+
+    .text {
+      font-size: 21px;
+      font-weight: 500;
+      color: #fff;
+      writing-mode:vertical-lr;
+      text-orientation:upright;
+      font-weight: 700;
+    }
+  }
+
+
+.btn {
+  font-size: 21px;
+  padding: 5px 20px;
+  border: 0;
+  background-color: #414b50;
+  color: #fff;
+  border-radius: 3px;
+  transition: all 250ms ease-in-out;
+  cursor: pointer;
+  &:hover {
+    background-color: #2515078b;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+.bg{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+}
+@media screen and (max-width:1020px) {
+  .right-side{
+    width:75%;
+  }
+  
+  
+}
