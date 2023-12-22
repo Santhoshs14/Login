@@ -3,7 +3,7 @@ import "./App.css"
 import "./components/style.css"
 import Register from "./components/register";
 import Login from './components/login';
-import bg from "./assets/bg3.jpg"
+import bg from "./assets/bg2.jpg"
 
 const App = () => {
   const [isLogginActive, setIsLogginActive] = useState(true);
