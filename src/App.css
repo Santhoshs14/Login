@@ -43,7 +43,7 @@
     right:0%;
     width:27em;
     height:44em;
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
     background-color:#fff;
